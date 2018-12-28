@@ -4,11 +4,16 @@ import com.akshaykumbhar.coderswag.Model.Category
 import com.akshaykumbhar.coderswag.Model.Product
 
 object Dataservice {
-    val category = listOf(
-            Category("DIGITAL","digital good imsge"),
+    val categories = listOf(
+            Category("HAT","hatimage"),
+            Category("HOODIE","hoodieimage"),
+            Category("SHIRT","shirtimage"),
+            Category("DIGITAL","digitalgoodsimage"),
+            Category("DIGITAL","digitalgoodsimage"),
             Category("HAT","hatimage"),
             Category("HOODIE","hoodieimage"),
             Category("SHIRT","shirtimage")
+
     )
 
     val product = listOf(
