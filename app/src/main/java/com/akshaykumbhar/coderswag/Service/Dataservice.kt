@@ -5,7 +5,7 @@ import com.akshaykumbhar.coderswag.Model.Product
 
 object Dataservice {
     val category = listOf(
-            Category("Digital","digital good imsge"),
+            Category("DIGITAL","digital good imsge"),
             Category("HAT","hatimage"),
             Category("HOODIE","hoodieimage"),
             Category("SHIRT","shirtimage")
@@ -22,7 +22,7 @@ object Dataservice {
       Product("Devslopes Hoodie Grey","$28","hoodie1"),
             Product("Devslopes Hoodie Red","$27","hoodie2"),
             Product("Devslopes Hoodie White","$30","hoodie3"),
-            Product("Devslopes Hoodie Black","$35","hoodie4"),
+            Product("Devslopes Hoodie Black","$35","hoodie4")
     )
 
     val shirt = listOf(
@@ -30,6 +30,6 @@ object Dataservice {
             Product("Devslopes Badge grey","$12","shirt2"),
             Product("Devslopes Logo Shirt red","$10","shirt3"),
             Product("Devslopes Hustle","$15","shirt4"),
-            Product("Kickflip Studios","$21","shirt5"),
+            Product("Kickflip Studios","$21","shirt5")
             )
 }
