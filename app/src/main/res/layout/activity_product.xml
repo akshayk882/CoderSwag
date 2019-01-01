@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.MainActivity">
+    tools:context=".Controller.ProductActivity">
 
     <TextView
-        android:id="@+id/Categorytxt"
+        android:id="@+id/productxt"
         android:layout_width="142dp"
         android:layout_height="31dp"
-        android:text="Categories"
+        android:text="Products"
         android:textSize="20sp"
         app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,14 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleview"
-        android:layout_width="352dp"
-        android:layout_height="577dp"
+        android:id="@+id/productview"
+        android:layout_width="0dp"
+        android:layout_height="534dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Categorytxt" />
-
+        app:layout_constraintTop_toBottomOf="@+id/productxt" />
 
 </android.support.constraint.ConstraintLayout>

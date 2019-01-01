@@ -16,11 +16,11 @@ object Dataservice {
 
     )
 
-    val product = listOf(
-            Product("Devslopes graphic beanie","18$","hat1"),
-            Product("Devslopes Hat Black","20$","hat2"),
-            Product("Devslopes Hat White","25$","hat3"),
-            Product("Devslopes Hat snapback","16$","hat4")
+    val hat = listOf(
+            Product("Devslopes graphic beanie","$18","hat1"),
+            Product("Devslopes Hat Black","$20","hat2"),
+            Product("Devslopes Hat White","$25","hat3"),
+            Product("Devslopes Hat snapback","$16","hat4")
     )
 
     val hoodies = listOf(
@@ -37,4 +37,16 @@ object Dataservice {
             Product("Devslopes Hustle","$15","shirt4"),
             Product("Kickflip Studios","$21","shirt5")
             )
+
+    val digital = listOf<Product>()
+    fun getProduct(category: String) :List<Product>
+    {
+        when(category)
+        {
+            "HAT" -> return hat
+            "HOODIE" -> return hoodies
+            "SHIRT" -> return shirt
+            else -> return digital
+        }
+    }
 }
