@@ -14,7 +14,7 @@ import com.akshaykumbhar.coderswag.Service.Dataservice
 import com.akshaykumbhar.coderswag.Service.Dataservice.categories
 import com.akshaykumbhar.coderswag.Utilities.EXTRA
 import kotlinx.android.synthetic.main.activity_main.*
-import com.akshaykumbhar.coderswag.Utilities.KEY
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var adapter : CategoryRecycleAdapter
@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         adapter = CategoryRecycleAdapter(this,Dataservice.categories){category->
             val productIntent = Intent(this,ProductActivity::class.java)
+            productIntent.putExtra()
             productIntent.putExtra(EXTRA,category.title)
             startActivity(productIntent)
         }
